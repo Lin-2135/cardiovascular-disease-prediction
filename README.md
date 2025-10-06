@@ -41,6 +41,6 @@ This project develops and compares multiple machine learning models to predict c
 4. Run the R scripts in sequence to reproduce the analysis
 
 ## 👤 Author
-[Your Name] - [Your Email] - [Your LinkedIn Profile]
+[Ruixin Lin] - [2135173575@qq.com] 
 
 *Bioinformatics student specializing in machine learning applications in healthcare.*
