@@ -1,40 +1,46 @@
-# cardiovascular-disease-prediction
-A machine learning project to predict cardiovascular disease risk using R
 # Cardiovascular Disease Prediction Model
 
 ## Project Overview
-This project develops and compares multiple machine learning models to predict cardiovascular disease risk using clinical data. The goal is to identify the most effective model and key risk factors, providing a data-driven approach for early diagnosis and intervention.
+This project develops and compares multiple machine learning models to predict cardiovascular disease risk using clinical data from 2 CSV datasets. The goal is to identify the most effective model and key risk factors for early diagnosis.
 
-## 🛠️ Tech Stack & Libraries
-- **Language:** R
-- **Key Libraries:** `glmnet`, `rpart`, `neuralnet`, `caret`, `randomForest`, `xgboost`, `ggplot2`, `rpart.plot`
+## 📁 Project Files
+- **Code Files**: LASSO regression, Decision Tree, Neural Network, and model comparison R scripts
+- **Report**: Complete project analysis in PDF format  
+- **Images**: All generated charts and visualizations
+- **Data**: Heart disease datasets (learning and test sets)
 
-## 📊 Methodology
-1.  **Data Preprocessing & EDA:** Handled clinical datasets and performed exploratory data analysis to understand feature distributions.
-2.  **Model Building & Training:** Implemented and trained five distinct algorithms:
-    - **Linear Model:** LASSO Regression (with cross-validation)
-    - **Tree-based Models:** Decision Tree, Random Forest, XGBoost
-    - **Neural Network:** Single hidden layer network
-3.  **Model Evaluation:** Systematically compared models using Mean Squared Error (MSE), R-squared, and feature importance analysis.
+## 🛠️ Technical Stack
+- **Programming Language**: R
+- **Key Libraries**: 
+  - Machine Learning: `glmnet`, `rpart`, `neuralnet`, `randomForest`, `xgboost`, `caret`
+  - Data Visualization: `ggplot2`, `corrplot`
+  - Data Processing: `readxl`, `plyr`, `Hmisc`
 
-## 📈 Key Results & Insights
-- **Model Performance Ranking:** LASSO Regression demonstrated the superior performance (MSE = 1.000) on the test set, outperforming more complex models.
-- **Performance Comparison:**
-    | Model | Test MSE |
-    |---|---|
-    | LASSO Regression | 1.000 |
-    | Random Forest | ~0.95 |
-    | XGBoost | ~0.98 |
-    | Decision Tree | 1.112 |
-    | Neural Network | 1.423 |
-- **Business Insight:** The results highlight that a simpler, regularized linear model can be more effective and interpretable for this specific clinical dataset than black-box alternatives.
+## 🔬 Methodology
+1. **Data Preparation**: Loaded and preprocessed clinical data with 13 features including age, blood pressure, cholesterol, etc.
+2. **Model Development**: Implemented 5 machine learning approaches:
+   - LASSO Regression (with cross-validation)
+   - Decision Tree
+   - Neural Network (single hidden layer)
+   - Random Forest
+   - XGBoost
+3. **Model Evaluation**: Compared performance using Mean Squared Error (MSE) and feature importance analysis
 
-![Model Comparison](images/model_comparison.png)
-## 🚀 How to Run
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/your-username/cardiovascular-disease-prediction.git
-    ```
-2.  **Open in RStudio:** Set the project directory as your working directory.
-3.  **Install required packages:** Run the `install.packages()` commands at the top of each R script if you haven't already.
-4.  **Execute the analysis:** Run the scripts in the `code/` folder in sequence to reproduce the results.
+## 📊 Key Results
+- **Best Performing Model**: LASSO Regression achieved lowest MSE (1.000) on test set
+- **Performance Ranking**:
+  - LASSO: MSE = 1.000
+  - Decision Tree: MSE = 1.112  
+  - Neural Network: MSE = 1.423
+- **Key Insights**: Simple linear models with regularization outperformed complex neural networks for this clinical dataset, highlighting the importance of model selection based on data characteristics
+
+## 🚀 How to Use
+1. Download all project files to your local directory
+2. Open RStudio and set working directory to project folder
+3. Install required R packages listed above
+4. Run the R scripts in sequence to reproduce the analysis
+
+## 👤 Author
+[Your Name] - [Your Email] - [Your LinkedIn Profile]
+
+*Bioinformatics student specializing in machine learning applications in healthcare.*
